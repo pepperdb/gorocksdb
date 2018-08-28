@@ -54,9 +54,9 @@ func (opts *IngestExternalFileOptions) SetAllowBlockingFlush(flag bool) {
 // This option could only be used if the DB has been running
 // with allow_ingest_behind=true since the dawn of time.
 // All files will be ingested at the bottommost level with seqno=0.
-func (opts *IngestExternalFileOptions) SetIngestionBehind(flag bool) {
-	C.rocksdb_ingestexternalfileoptions_set_ingest_behind(opts.c, boolToChar(flag))
-}
+//func (opts *IngestExternalFileOptions) SetIngestionBehind(flag bool) {
+//	C.rocksdb_ingestexternalfileoptions_set_ingest_behind(opts.c, boolToChar(flag))
+//}
 
 // Destroy deallocates the IngestExternalFileOptions object.
 func (opts *IngestExternalFileOptions) Destroy() {
